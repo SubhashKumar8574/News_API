@@ -17,12 +17,15 @@ function binData(articles) {
     const newsCardTemplate = document.getElementById('template-news-card');
 
     cardsContainer.innerHTML = "";
-    articles.forEach((article) => {
-        if (!article.urlToImage) return;
-        const cardClone = newsCardTemplate.content.cloneNode(true);
-        fillDataInCard(cardClone, article);
-        cardsContainer.appendChild(cardClone);
-    });
+    if(articles){
+        articles.forEach((article) => {
+            if (!article.urlToImage) return;
+            const cardClone = newsCardTemplate.content.cloneNode(true);
+            fillDataInCard(cardClone, article);
+            cardsContainer.appendChild(cardClone);
+        });
+    }
+    
 }
 function fillDataInCard(cardClone, article) {
     const newsImg = cardClone.querySelector('#news-img');
