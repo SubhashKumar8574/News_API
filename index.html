@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>NEWS</title>
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="company-logo" onclick="reload()">
+                <img src="./assets/news_corp_animation_3_.gif" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex" id="sidemenu">
+                    <li class="hover-link nav-item" id="startup" onclick="onNavItemClick('startup')">Startup</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <i class="fas fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+    </main>
+
+    <footer>
+        <div class="main-nav container flex">
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item">FAQ</li>
+                    <li class="hover-link nav-item">Contact Us</li>
+                </ul>
+            </div>
+
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item">&copy; 2023 | News-Hub</li>
+                    <li class="hover-link nav-item">Privacy Policy</li>
+                    <li class="hover-link nav-item">Terms of Use</li>
+                </ul>
+            </div>
+
+            <div class="nav-links">
+                <ul class="flex">
+                    <span><u>Designed by:</u></span>
+                    <li class="hover-link nav-item">@Subhash Kumar</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 id="news-source" class="news-source">End gadgetr</h6>
+                <p id="news-desc" class="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+                    deleniti veniam commodi! Veniam velit necessitatibus magnam, quas neque quos error!</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
