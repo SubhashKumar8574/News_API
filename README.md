@@ -25,24 +25,25 @@ https://subhashkumar8574.github.io/News_API/
 
 https://newsapi.org
 
+
 ## Screenshots
 
 Home page:
 
-![App Screenshot]
+![Home Page](https://github.com/SubhashKumar8574/News_API/assets/115339472/32e7a8df-8441-48d8-b6f8-f219b4a38738)
+
+Example - Search for Science:
+
+![Science](https://github.com/SubhashKumar8574/News_API/assets/115339472/cba24b54-6ae3-4027-9dcf-ea32e3d6c412)
+
+Example - Search for ISRO:
+
+![ISRO](https://github.com/SubhashKumar8574/News_API/assets/115339472/09c66802-e5bd-48ad-99ed-76a5760a708b)
 
 
-Examples - Search for Cakes:
 
-![App Screenshot]
 
-After click on show more button you can generate more Images:
 
-![App Screenshot]
-
-Examples - Search for Comics:
-
-![App Screenshot]
 
 
 
